@@ -1,7 +1,7 @@
 'use strict';
 
 var will = require('willy').will;
-var app = require('../app.js');
+var fnInjector = require('../app.js');
 
 describe('injecting a function', function () {
   var targetFn;
@@ -12,7 +12,7 @@ describe('injecting a function', function () {
 
   it('should execute the injected fn', function () {
     var injectedCalled;
-    targetFn = app(targetFn, function () {
+    targetFn = fnInjector(targetFn, function () {
       injectedCalled = true;
     });
     targetFn();
@@ -24,7 +24,7 @@ describe('injecting a function', function () {
     var args;
     var originalTarget = targetFn;
 
-    targetFn = app(targetFn, function () {
+    targetFn = fnInjector(targetFn, function () {
       args = Array.prototype.slice.apply(arguments);
     });
 
@@ -38,7 +38,7 @@ describe('injecting a function', function () {
   it('should not screw with scope', function () {
     var scope;
     var target = function () {};
-    target = app(target, function () {
+    target = fnInjector(target, function () {
       scope = this;
     });
 

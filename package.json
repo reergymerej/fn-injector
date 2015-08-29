@@ -9,5 +9,33 @@
     "grunt-mocha-test": "^0.12.7",
     "mocha": "^2.2.5",
     "willy": "^1.0.1"
-  }
+  },
+  "name": "fn-injector",
+  "description": "function splicing",
+  "version": "1.0.0",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "willy": "^1.0.3",
+    "grunt-mocha-test": "^0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reergymerej/fn-injector.git"
+  },
+  "keywords": [
+    "function",
+    "injector",
+    "function",
+    "injection"
+  ],
+  "author": "Jeremy Greer <jeremy.greer.atl@gmail.com> (http://jeremygreer.herokuapp.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reergymerej/fn-injector/issues"
+  },
+  "homepage": "https://github.com/reergymerej/fn-injector#readme"
 }
