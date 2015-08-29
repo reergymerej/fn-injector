@@ -11,7 +11,7 @@
     "willy": "^1.0.1"
   },
   "name": "fn-injector",
-  "description": "function splicing",
+  "description": "inject a function in place of another",
   "version": "1.0.0",
   "directories": {
     "test": "test"

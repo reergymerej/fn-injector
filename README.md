@@ -1,5 +1,7 @@
 # fn-injector
 
+[![Build Status](https://travis-ci.org/reergymerej/fn-injector.svg)](https://travis-ci.org/reergymerej/fn-injector)
+
 Ever want to splice a function into a call stack, say for debugging or logging?
 
 fn-injector allows you a quick way to replace a function with another.  When the original function is called, it will actually execute your replacement.
