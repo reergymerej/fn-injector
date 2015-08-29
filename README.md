@@ -1,6 +1,6 @@
 # fn-injector
 
-[![Build Status](https://travis-ci.org/reergymerej/fn-injector.svg)](https://travis-ci.org/reergymerej/fn-injector)
+[![Build Status][travis-image]][travis-url] [![npm version][npm-image]][npm-url]
 
 Ever want to splice a function into a call stack, say for debugging or logging?
 
@@ -42,3 +42,8 @@ console.log = fnInjector(console.log, function (log) {
 
 console.log('hello');  // Fri Aug 28 2015 22:58:46 GMT-0400 (EDT) 'hello'
 ```
+
+[travis-image]: https://travis-ci.org/reergymerej/fn-injector.svg
+[travis-url]: https://travis-ci.org/reergymerej/fn-injector
+[npm-image]: https://badge.fury.io/js/fn-injector.svg
+[npm-url]: https://www.npmjs.com/package/fn-injector
