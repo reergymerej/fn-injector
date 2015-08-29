@@ -1,4 +1,7 @@
 {
+  "name": "fn-injector",
+  "description": "inject a function in place of another",
+  "version": "1.0.1",
   "main": "app.js",
   "scripts": {
     "test": "mocha --reporter spec"
@@ -10,17 +13,10 @@
     "mocha": "^2.2.5",
     "willy": "^1.0.1"
   },
-  "name": "fn-injector",
-  "description": "inject a function in place of another",
-  "version": "1.0.0",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-watch": "^0.6.1",
-    "willy": "^1.0.3",
-    "grunt-mocha-test": "^0.12.7"
   },
   "repository": {
     "type": "git",
